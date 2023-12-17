@@ -1,6 +1,6 @@
 # demo-hyper-express-graphql-server
 
-Demo GraphQL server using yoga running on hyper-express
+Demo GraphQL server running on hyper-express
 
 ## requirements
 
@@ -10,12 +10,12 @@ Demo GraphQL server using yoga running on hyper-express
 
 This demo service uses:
 
-* @graphql-tools/schema to prepare schema
-* dotenv
-* graphql-js to execute commands
-* hyper-express
-* knex
-* pg (for PostgreSQL database)
+* [@graphql-tools/schema](https://www.npmjs.com/package/@graphql-tools/schema) to prepare schema
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [graphql](https://www.npmjs.com/package/graphql) to execute commands
+* [hyper-express](https://www.npmjs.com/package/hyper-express)
+* [knex](https://www.npmjs.com/package/knex)
+* [pg](https://www.npmjs.com/package/pg) (for PostgreSQL database)
 
 ```sh
 npm i
