@@ -1,0 +1,44 @@
+{
+  "name": "demo-hyper-express-graphql-server",
+  "version": "1.0.0",
+  "description": "Demo GraphQL server using yoga running on hyper-express",
+  "main": "build/index.mjs",
+  "scripts": {
+    "build:ts": "tsc -p tsconfig.build.json",
+    "build": "npm-run-all clean build:ts",
+    "clean": "rimraf build",
+    "start": "node .",
+    "start:ts": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratyaman/demo-hyper-express-graphql-server.git"
+  },
+  "keywords": [
+    "graphql",
+    "server",
+    "hyper-express",
+    "yoga"
+  ],
+  "author": "Haci Murat Yaman",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/muratyaman/demo-hyper-express-graphql-server/issues"
+  },
+  "homepage": "https://github.com/muratyaman/demo-hyper-express-graphql-server#readme",
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.2",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1",
+    "hyper-express": "^6.14.4",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

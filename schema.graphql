@@ -1,0 +1,38 @@
+type Query {
+  health: Health!
+  me: User!
+}
+
+type Health {
+  data: String
+  error: String
+}
+
+type User {
+  id: ID!
+  username: String!
+  locationHistory(inputs: LocationHistoryInput): LocationHistory!
+}
+
+input LocationHistoryInput {
+  after: String!
+  #before: String
+  # TODO: pagination
+  limit: Int
+  #offset: Int
+}
+
+type LocationHistory {
+  data: [Location!]!
+  # TODO: pagination
+  #pageInfo: PageInfo!
+  error: String
+}
+
+type Location {
+  # TODO: Date
+  ts: String!
+  latitude: Float!
+  longitude: Float!
+  radiusInMetres: Float!
+}
