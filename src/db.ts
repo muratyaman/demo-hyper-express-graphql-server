@@ -23,7 +23,7 @@ export async function makeDb(config: IConfig): Promise<IDb> {
 
     try {
       const res = await _db.raw<{ rows: IDtoHealthCheck[] }>("SELECT 'OK' AS status");
-      console.log('health check', res);
+      //console.log('health check', res);
       data = res.rows[0].status;
     } catch (err) {
       error = err instanceof Error ? err.message : 'Unknown error with database';

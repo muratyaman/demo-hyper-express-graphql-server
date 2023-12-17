@@ -2,7 +2,7 @@
   "name": "demo-hyper-express-graphql-server",
   "version": "1.0.0",
   "description": "Demo GraphQL server using yoga running on hyper-express",
-  "main": "build/index.mjs",
+  "main": "build/index.js",
   "scripts": {
     "build:ts": "tsc -p tsconfig.build.json",
     "build": "npm-run-all clean build:ts",
